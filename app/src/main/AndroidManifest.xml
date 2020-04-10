@@ -17,27 +17,67 @@
 				<category android:name = "android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		
+		<!-- A child of the main activity -->
 		<activity
 			android:name = ".StayActivity"
-			android:label = "@string/category_stay">
-		</activity>
-		<activity
-			android:name = ".EatActivity"
-			android:label = "@string/category_eat">
-		</activity>
-		<activity
-			android:name = ".DrinkActivity"
-			android:label = "@string/category_drink">
-		</activity>
-		<activity
-			android:name = ".TodoActivity"
-			android:label = "@string/category_todo">
-		</activity>
-		<activity
-			android:name = ".ShopActivity"
-			android:label = "@string/category_shop">
+			android:label = "@string/category_stay"
+			android:parentActivityName = ".MainActivity">
+			
+			<!-- Parent activity meta data to support 4.0 and lower -->
+			<meta-data
+				android:name = "android.support.PARENT_ACTIVITY"
+				android:value = ".MainActivity" />
 		</activity>
 		
+		<!-- A child of the main activity -->
+		<activity
+			android:name = ".EatActivity"
+			android:label = "@string/category_eat"
+			android:parentActivityName = ".MainActivity">
+			
+			<!-- Parent activity meta data to support 4.0 and lower -->
+			<meta-data
+				android:name = "android.support.PARENT_ACTIVITY"
+				android:value = ".MainActivity" />
+		</activity>
+		
+		<!-- A child of the main activity -->
+		<activity
+			android:name = ".DrinkActivity"
+			android:label = "@string/category_drink"
+			android:parentActivityName = ".MainActivity">
+			
+			<!-- Parent activity meta data to support 4.0 and lower -->
+			<meta-data
+				android:name = "android.support.PARENT_ACTIVITY"
+				android:value = ".MainActivity" />
+		</activity>
+		
+		<!-- A child of the main activity -->
+		<activity
+			android:name = ".TodoActivity"
+			android:label = "@string/category_todo"
+			android:parentActivityName = ".MainActivity">
+			
+			<!-- Parent activity meta data to support 4.0 and lower -->
+			<meta-data
+				android:name = "android.support.PARENT_ACTIVITY"
+				android:value = ".MainActivity" />
+		</activity>
+		
+		<!-- A child of the main activity -->
+		<activity
+			android:name = ".ShopActivity"
+			android:label = "@string/category_shop"
+			android:parentActivityName = ".MainActivity">
+			
+			<!-- Parent activity meta data to support 4.0 and lower -->
+			<meta-data
+				android:name = "android.support.PARENT_ACTIVITY"
+				android:value = ".MainActivity" />
+		</activity>
+	
 	</application>
 
 </manifest>
