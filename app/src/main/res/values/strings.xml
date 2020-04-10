@@ -1,3 +1,12 @@
 <resources>
+	<!-- Title for the application. [CHAR LIMIT=12] -->
 	<string name = "app_name">London Tour Guide</string>
+	
+	<!-- Title for each category of main layout -->
+	<string name = "category_stay">Where to stay?</string>
+	<string name = "category_eat">Where to eat?</string>
+	<string name = "category_drink">Where to drink?</string>
+	<string name = "category_todo">What to do?</string>
+	<string name = "category_shop">Where to shop?</string>
+	
 </resources>

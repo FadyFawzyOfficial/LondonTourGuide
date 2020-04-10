@@ -5,72 +5,72 @@
 	xmlns:tools = "http://schemas.android.com/tools"
 	android:layout_width = "match_parent"
 	android:layout_height = "match_parent"
-	android:orientation="vertical"
-	android:background="#FFF7DA"
+	android:background = "@color/tan_background"
+	android:orientation = "vertical"
 	tools:context = ".MainActivity">
 	
 	<!-- Stay category -->
 	<FrameLayout
 		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content">
+		android:layout_height = "wrap_content"
+		android:background = "@color/category_stay">
 		
 		<TextView
-			android:id="@+id/stay"
-			android:layout_width = "wrap_content"
-			android:text="Where to stay?"
-			android:layout_height = "wrap_content" />
+			android:id = "@+id/stay"
+			style = "@style/CategoryStyle"
+			android:text = "@string/category_stay" />
 	
 	</FrameLayout>
 	
 	<!-- Eat category -->
 	<FrameLayout
 		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content">
+		android:layout_height = "wrap_content"
+		android:background = "@color/category_eat">
 		
 		<TextView
-			android:id="@+id/eat"
-			android:layout_width = "wrap_content"
-			android:text="Where to eat?"
-			android:layout_height = "wrap_content" />
+			android:id = "@+id/eat"
+			style = "@style/CategoryStyle"
+			android:text = "@string/category_eat" />
 	
 	</FrameLayout>
 	
 	<!-- Drink category -->
 	<FrameLayout
 		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content">
+		android:layout_height = "wrap_content"
+		android:background = "@color/category_drink">
 		
 		<TextView
-			android:id="@+id/drink"
-			android:layout_width = "wrap_content"
-			android:text="Where to drink?"
-			android:layout_height = "wrap_content" />
+			android:id = "@+id/drink"
+			style = "@style/CategoryStyle"
+			android:text = "@string/category_drink" />
 	
 	</FrameLayout>
 	
 	<!-- Do category -->
 	<FrameLayout
 		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content">
+		android:layout_height = "wrap_content"
+		android:background = "@color/category_todo">
 		
 		<TextView
-			android:id="@+id/todo"
-			android:layout_width = "wrap_content"
-			android:text="What to do?"
-			android:layout_height = "wrap_content" />
+			android:id = "@+id/todo"
+			style = "@style/CategoryStyle"
+			android:text = "@string/category_todo" />
 	
 	</FrameLayout>
 	
 	<!-- Shop category -->
 	<FrameLayout
 		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content">
+		android:layout_height = "wrap_content"
+		android:background = "@color/category_shop">
 		
 		<TextView
-			android:id="@+id/shop"
-			android:layout_width = "wrap_content"
-			android:text="Where to shop?"
-			android:layout_height = "wrap_content" />
+			android:id = "@+id/shop"
+			style = "@style/CategoryStyle"
+			android:text = "@string/category_shop" />
 	
 	</FrameLayout>
 
