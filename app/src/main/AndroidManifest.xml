@@ -9,6 +9,7 @@
 		android:roundIcon = "@mipmap/ic_launcher_round"
 		android:supportsRtl = "true"
 		android:theme = "@style/AppTheme">
+		
 		<activity android:name = ".MainActivity">
 			<intent-filter>
 				<action android:name = "android.intent.action.MAIN" />
@@ -16,6 +17,27 @@
 				<category android:name = "android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		<activity
+			android:name = ".StayActivity"
+			android:label = "@string/category_stay">
+		</activity>
+		<activity
+			android:name = ".EatActivity"
+			android:label = "@string/category_eat">
+		</activity>
+		<activity
+			android:name = ".DrinkActivity"
+			android:label = "@string/category_drink">
+		</activity>
+		<activity
+			android:name = ".TodoActivity"
+			android:label = "@string/category_todo">
+		</activity>
+		<activity
+			android:name = ".ShopActivity"
+			android:label = "@string/category_shop">
+		</activity>
+		
 	</application>
 
 </manifest>
