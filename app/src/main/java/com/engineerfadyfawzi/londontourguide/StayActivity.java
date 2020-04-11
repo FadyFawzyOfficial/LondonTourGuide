@@ -32,7 +32,7 @@ public class StayActivity extends AppCompatActivity
         // Create an {@link PlaceAdapter}, whose data source is a list of
         // {@link Place}s. The adapter knows how to create list item views
         // for each item in the list.
-        PlaceAdapter placeAdapter = new PlaceAdapter( this, places );
+        PlaceAdapter placeAdapter = new PlaceAdapter( this, places, R.color.category_stay );
         
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = findViewById( R.id.list_view );
