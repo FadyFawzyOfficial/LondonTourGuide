@@ -2,4 +2,13 @@
 <resources>
 	<!-- Height of each list item -->
 	<dimen name = "list_item_height">88dp</dimen>
+	
+	<!-- Padding of each list item -->
+	<dimen name = "list_item_padding">16dp</dimen>
+	
+	<!-- Width and Height of each list item icon (in container) -->
+	<dimen name = "container_icon_dimens">36dp</dimen>
+	
+	<!-- Padding and Margin of each text and image (in container) -->
+	<dimen name = "container_padding_margin">8dp</dimen>
 </resources>

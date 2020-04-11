@@ -7,23 +7,22 @@
 	android:background = "@color/tan_background">
 	
 	<TextView
+		android:id = "@+id/place_name"
+		style = "@style/PlaceTextStyle"
 		android:layout_width = "0dp"
 		android:layout_height = "match_parent"
 		android:layout_weight = "1"
-		android:background = "@mipmap/test"
-		android:gravity = "bottom"
-		android:padding = "16dp"
-		android:text = "Ace Shoreditch"
-		android:textAppearance = "?android:textAppearanceMedium"
-		android:textColor = "@android:color/white"
-		android:textStyle = "bold" />
+		tools:background = "@mipmap/test"
+		tools:text = "@string/stay_name_one" />
 	
 	<LinearLayout
+		android:id = "@+id/text_container"
 		android:layout_width = "0dp"
 		android:layout_height = "match_parent"
-		android:background = "@color/category_stay"
 		android:layout_weight = "1"
-		android:orientation = "vertical">
+		android:orientation = "vertical"
+		android:paddingLeft = "8dp"
+		tools:background = "@color/category_stay">
 		
 		<LinearLayout
 			android:layout_width = "match_parent"
@@ -31,22 +30,13 @@
 			android:layout_weight = "1">
 			
 			<ImageView
-				android:layout_width = "36dp"
-				android:layout_height = "36dp"
-				android:layout_gravity = "center_vertical"
-				android:layout_margin = "8dp"
-				android:src = "@drawable/location"
-				android:tint = "@android:color/white" />
+				style = "@style/ContainerIconStyle"
+				tools:src = "@drawable/location" />
 			
 			<TextView
-				android:layout_width = "match_parent"
-				android:layout_height = "match_parent"
-				android:gravity = "center_vertical"
-				android:padding = "8dp"
-				android:text = "100 Shoreditch High St, London E1 6JQ, UK"
-				android:textAppearance = "?android:textAppearanceSmall"
-				android:textColor = "@android:color/white"
-				android:textStyle = "bold" />
+				android:id = "@+id/place_location"
+				style = "@style/ContainerTextStyle"
+				tools:text = "@string/stay_location_one" />
 		
 		</LinearLayout>
 		
@@ -56,22 +46,13 @@
 			android:layout_weight = "1">
 			
 			<ImageView
-				android:layout_width = "36dp"
-				android:layout_height = "36dp"
-				android:layout_gravity = "center_vertical"
-				android:layout_margin = "8dp"
-				android:src = "@drawable/website"
-				android:tint = "@android:color/white" />
+				style = "@style/ContainerIconStyle"
+				android:src = "@drawable/website" />
 			
 			<TextView
-				android:layout_width = "match_parent"
-				android:layout_height = "match_parent"
-				android:gravity = "center_vertical"
-				android:padding = "8dp"
-				android:text = "Website"
-				android:textAppearance = "?android:textAppearanceSmall"
-				android:textColor = "@android:color/white"
-				android:textStyle = "bold" />
+				android:id = "@+id/place_website"
+				style = "@style/ContainerTextStyle"
+				tools:text = "@string/stay_website_one" />
 		
 		</LinearLayout>
 		
@@ -81,26 +62,16 @@
 			android:layout_weight = "1">
 			
 			<ImageView
-				android:layout_width = "36dp"
-				android:layout_height = "36dp"
-				android:layout_gravity = "center_vertical"
-				android:layout_margin = "8dp"
-				android:src = "@drawable/phone"
-				android:tint = "@android:color/white" />
+				style = "@style/ContainerIconStyle"
+				android:src = "@drawable/phone" />
 			
 			<TextView
-				android:layout_width = "match_parent"
-				android:layout_height = "match_parent"
-				android:gravity = "center_vertical"
-				android:padding = "8dp"
-				android:text = "+44 20 7613 9800"
-				android:textAppearance = "?android:textAppearanceSmall"
-				android:textColor = "@android:color/white"
-				android:textStyle = "bold" />
+				android:id = "@+id/place_phone"
+				style = "@style/ContainerTextStyle"
+				tools:text = "@string/stay_phone_one" />
 		
 		</LinearLayout>
 	
 	</LinearLayout>
-
 
 </LinearLayout>

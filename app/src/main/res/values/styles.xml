@@ -8,17 +8,46 @@
 		<item name = "colorAccent">@color/colorAccent</item>
 	</style>
 	
-	<!-- Style for a each category -->
+	<!-- Style for a each category. -->
 	<style name = "CategoryStyle">
 		<item name = "android:layout_width">match_parent</item>
 		<item name = "android:layout_height">@dimen/list_item_height</item>
-		<item name = "android:padding">16dp</item>
+		<item name = "android:padding">@dimen/list_item_padding</item>
 		<item name = "android:textAppearance">?android:textAppearanceMedium</item>
 		<item name = "android:textAllCaps">true</item>
 		<item name = "android:textColor">@android:color/white</item>
 		<item name = "android:textStyle">bold</item>
 		<item name = "android:gravity">center_vertical</item>
 		<item name = "android:background">?android:selectableItemBackground</item>
+	</style>
+	
+	<!-- Style for the text view of place name. -->
+	<style name = "PlaceTextStyle">
+		<item name = "android:gravity">bottom</item>
+		<item name = "android:padding">@dimen/list_item_padding</item>
+		<item name = "android:textAppearance">?android:textAppearanceMedium</item>
+		<item name = "android:textColor">@android:color/white</item>
+		<item name = "android:textStyle">bold</item>
+	</style>
+	
+	<!-- Style for the text views of place location, website and phone. -->
+	<style name = "ContainerTextStyle">
+		<item name = "android:layout_width">match_parent</item>
+		<item name = "android:layout_height">match_parent</item>
+		<item name = "android:gravity">center_vertical</item>
+		<item name = "android:padding">@dimen/container_padding_margin</item>
+		<item name = "android:textAppearance">?android:textAppearanceSmall</item>
+		<item name = "android:textColor">@android:color/white</item>
+		<item name = "android:textStyle">bold</item>
+	</style>
+	
+	<!-- Style for the image views of place location, website and phone. -->
+	<style name = "ContainerIconStyle">
+		<item name = "android:layout_width">@dimen/container_icon_dimens</item>
+		<item name = "android:layout_height">@dimen/container_icon_dimens</item>
+		<item name = "android:layout_gravity">center</item>
+		<item name = "android:layout_margin">@dimen/container_padding_margin</item>
+		<item name = "android:tint">@android:color/white</item>
 	</style>
 
 </resources>
