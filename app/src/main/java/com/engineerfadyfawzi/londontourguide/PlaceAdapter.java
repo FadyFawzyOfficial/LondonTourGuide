@@ -1,11 +1,12 @@
 package com.engineerfadyfawzi.londontourguide;
 
-import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -24,7 +25,13 @@ public class PlaceAdapter extends ArrayAdapter< Place >
     private int colorResourceId;
     
     /**
-     * Create a new {@link PlaceAdapter} objcet.
+     * Modify list item height to equal (=) half of actual screen width (in pixels)
+     * which is determined at run time
+     */
+    private static final int LIST_ITEM_CUSTOM_HEIGHT = getScreenWidthInPixels() / 2;
+    
+    /**
+     * Create a new {@link PlaceAdapter} object.
      *
      * This is our own custom constructor (it doesn't mirror a superclass constructor).
      * The context is used to inflate the layout file, and the list is the data we want
@@ -102,8 +109,38 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         //        // Set the background color of the text container View
         //        textContainer.setBackgroundResource( mColorResourceId );
         
+        // Create a new set of layout parameters with the specified width and height in (PIXELS)
+        LayoutParams layoutParams = new LayoutParams( LayoutParams.MATCH_PARENT, LIST_ITEM_CUSTOM_HEIGHT );
+        // These supply parameters to the parent of this view specifying how it should be arranged.
+        // Set the layout parameters associated with this view (listItemView)
+        listItemView.setLayoutParams( layoutParams );
+        
         // Return the whole list item layout (containing 4 TextView)
         // so that it can be shown in the listView
         return listItemView;
     }
+    
+    /**
+     * This method get the width of the device's screen at run time
+     *
+     * @return the width in pixels of the screen at run time
+     */
+    public static int getScreenWidthInPixels()
+    {
+        return Resources.getSystem().getDisplayMetrics().widthPixels;
+    }
+    
+    /**
+     * This method get the width of the device's screen at run time
+     *
+     * @return the width in dp of the screen at run time
+     */
+    //    public static int getScreenWidthInDPs()
+    //    {
+    //        DisplayMetrics displayMetrics = Resources.getSystem().getDisplayMetrics();
+    //        int screenWidthInPixels = displayMetrics.widthPixels;
+    //        double screenDensity = displayMetrics.density;
+    //        int screenWidthInDps = ( int ) ( screenWidthInPixels / screenDensity );
+    //        return screenWidthInDps;
+    //    }
 }

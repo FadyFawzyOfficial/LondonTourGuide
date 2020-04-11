@@ -3,7 +3,7 @@
 	xmlns:android = "http://schemas.android.com/apk/res/android"
 	xmlns:tools = "http://schemas.android.com/tools"
 	android:layout_width = "match_parent"
-	android:layout_height = "200dp"
+	android:layout_height = "210dp"
 	android:background = "@color/tan_background">
 	
 	<TextView
@@ -31,7 +31,7 @@
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
-				tools:src = "@drawable/location" />
+				android:src = "@drawable/location" />
 			
 			<TextView
 				android:id = "@+id/place_location"
