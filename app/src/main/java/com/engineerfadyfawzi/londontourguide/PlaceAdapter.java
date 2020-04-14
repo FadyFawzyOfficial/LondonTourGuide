@@ -1,7 +1,9 @@
 package com.engineerfadyfawzi.londontourguide;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,7 +72,7 @@ public class PlaceAdapter extends ArrayAdapter< Place >
             listItemView = LayoutInflater.from( getContext() ).inflate( R.layout.list_item, parent, false );
         
         // Get the {@link Place} object located at this position in the list
-        Place currentPlace = getItem( position );
+        final Place currentPlace = getItem( position );
         
         // Find the TextView in the list_item.xml layout with the ID place_name
         TextView placeName = listItemView.findViewById( R.id.place_name );
@@ -114,6 +116,24 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // These supply parameters to the parent of this view specifying how it should be arranged.
         // Set the layout parameters associated with this view (listItemView)
         listItemView.setLayoutParams( layoutParams );
+        
+        // Set an item click listener on the ListView, which sends an intent to a web browser
+        // to open a website which is owned by the selected place.
+        listItemView.setOnClickListener( new View.OnClickListener()
+        {
+            @Override
+            public void onClick( View view )
+            {
+                // Convert the String URL (website) into a URI object (to pass into the Intent constructor)
+                Uri placeUri = Uri.parse( getContext().getString( currentPlace.getPlaceWebsiteId() ) );
+                
+                // Create a new intent to view the place URI
+                Intent websiteIntent = new Intent( Intent.ACTION_VIEW, placeUri );
+                
+                // Send the intent to launch a new activity
+                getContext().startActivity( websiteIntent );
+            }
+        } );
         
         // Return the whole list item layout (containing 4 TextView)
         // so that it can be shown in the listView
