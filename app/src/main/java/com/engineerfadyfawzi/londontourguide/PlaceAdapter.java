@@ -93,6 +93,24 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // set this text on the place_website TextView
         placeWebsite.setText( currentPlace.getPlaceWebsiteId() );
         
+        // Set an click listener on the TextView (place website text view), which sends an intent
+        // to a web browser to open a website which is owned by the selected place.
+        placeWebsite.setOnClickListener( new View.OnClickListener()
+        {
+            @Override
+            public void onClick( View view )
+            {
+                // Convert the String URL (website) into a URI object (to pass into the Intent constructor)
+                Uri placeUri = Uri.parse( getContext().getString( currentPlace.getPlaceWebsiteId() ) );
+                
+                // Create a new intent to view the place URI
+                Intent websiteIntent = new Intent( Intent.ACTION_VIEW, placeUri );
+                
+                // Send the intent to launch a new activity
+                getContext().startActivity( websiteIntent );
+            }
+        } );
+        
         // Find the TextView in the list_item.xml layout with the ID place_phone
         TextView placePhone = listItemView.findViewById( R.id.place_phone );
         // Get the place phone from the currentPlace object and
@@ -116,24 +134,6 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // These supply parameters to the parent of this view specifying how it should be arranged.
         // Set the layout parameters associated with this view (listItemView)
         listItemView.setLayoutParams( layoutParams );
-        
-        // Set an item click listener on the ListView, which sends an intent to a web browser
-        // to open a website which is owned by the selected place.
-        listItemView.setOnClickListener( new View.OnClickListener()
-        {
-            @Override
-            public void onClick( View view )
-            {
-                // Convert the String URL (website) into a URI object (to pass into the Intent constructor)
-                Uri placeUri = Uri.parse( getContext().getString( currentPlace.getPlaceWebsiteId() ) );
-                
-                // Create a new intent to view the place URI
-                Intent websiteIntent = new Intent( Intent.ACTION_VIEW, placeUri );
-                
-                // Send the intent to launch a new activity
-                getContext().startActivity( websiteIntent );
-            }
-        } );
         
         // Return the whole list item layout (containing 4 TextView)
         // so that it can be shown in the listView
