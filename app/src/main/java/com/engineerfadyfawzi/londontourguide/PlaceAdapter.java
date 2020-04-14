@@ -117,6 +117,24 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // set this text on the place_phone TextView
         placePhone.setText( currentPlace.getPlacePhoneId() );
         
+        // Set an click listener on the TextView (place phone text view), which sends an intent
+        // to a phone dialer to open and write the phone number of selected place to dial pad
+        placePhone.setOnClickListener( new View.OnClickListener()
+        {
+            @Override
+            public void onClick( View view )
+            {
+                // Convert the String phone into a URI object (to pass into the Intent constructor)
+                Uri phoneUri = Uri.parse( "tel:" + getContext().getString( currentPlace.getPlacePhoneId() ).trim() );
+                
+                // Create a new intent to copy the place phone to dialer
+                Intent phoneIntent = new Intent( Intent.ACTION_DIAL, phoneUri );
+                
+                // Send the intent to launch a new activity which take the responsibility of calling
+                getContext().startActivity( phoneIntent );
+            }
+        } );
+        
         // Find the child LinearLayout in the list_item.xml layout with the ID text_container
         View textContainer = listItemView.findViewById( R.id.text_container );
         // Find the color that the resource ID maps to
