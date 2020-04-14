@@ -21,14 +21,14 @@
 		android:layout_height = "match_parent"
 		android:layout_weight = "1"
 		android:orientation = "vertical"
-		android:paddingLeft = "8dp"
 		tools:background = "@color/category_stay">
 		
 		<LinearLayout
-			android:id="@+id/place_location_container"
+			android:id = "@+id/place_location_container"
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
-			android:layout_weight = "1">
+			android:layout_weight = "1"
+			android:paddingLeft = "8dp">
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
@@ -42,10 +42,11 @@
 		</LinearLayout>
 		
 		<LinearLayout
-			android:id="@+id/place_website_container"
+			android:id = "@+id/place_website_container"
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
-			android:layout_weight = "1">
+			android:layout_weight = "1"
+			android:paddingLeft = "8dp">
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
@@ -59,10 +60,11 @@
 		</LinearLayout>
 		
 		<LinearLayout
-			android:id="@+id/place_phone_container"
+			android:id = "@+id/place_phone_container"
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
-			android:layout_weight = "1">
+			android:layout_weight = "1"
+			android:paddingLeft = "8dp">
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
