@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
@@ -81,15 +82,18 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         placeName.setText( currentPlace.getPlaceNameId() );
         placeName.setBackgroundResource( currentPlace.getPlaceImageId() );
         
-        // Find the TextView in the list_item.xml layout withe the ID place_location
+        // Find the TextView in the list_item.xml layout with the ID place_location
         TextView placeLocation = listItemView.findViewById( R.id.place_location );
         // Get the place location from the currentPlace object and
         // set this text on the place location TextView
         placeLocation.setText( currentPlace.getPlaceLocationId() );
     
-        // Set an click listener on the TextView (place location text view), which sends an intent
-        // to a maps app to open a the location on map which is owned by the selected place.
-        placeLocation.setOnClickListener( new View.OnClickListener()
+        // Find the LinearLayout in the list_item.xml layout with the ID place_location_container
+        LinearLayout placeLocationContainer = listItemView.findViewById( R.id.place_location_container );
+    
+        // Set an click listener on the LinearLayout (place location text view + icon image view), which
+        // sends an intent to a maps app to open the location is owned by the selected place.
+        placeLocationContainer.setOnClickListener( new View.OnClickListener()
         {
             @Override
             public void onClick( View view )
@@ -111,9 +115,12 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // set this text on the place_website TextView
         placeWebsite.setText( currentPlace.getPlaceWebsiteId() );
         
-        // Set an click listener on the TextView (place website text view), which sends an intent
-        // to a web browser to open a website which is owned by the selected place.
-        placeWebsite.setOnClickListener( new View.OnClickListener()
+        // Find the LinearLayout in the list_item.xml layout with the ID place_website_container
+        LinearLayout placeWebsiteContainer = listItemView.findViewById( R.id.place_website_container );
+        
+        // Set an click listener on the LinearLayout (place website text view + icon image view), which
+        // sends an intent to a web browser to open a website which is owned by the selected place.
+        placeWebsiteContainer.setOnClickListener( new View.OnClickListener()
         {
             @Override
             public void onClick( View view )
@@ -134,10 +141,13 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // Get the place phone from the currentPlace object and
         // set this text on the place_phone TextView
         placePhone.setText( currentPlace.getPlacePhoneId() );
+    
+        // Find the LinearLayout in the list_item.xml layout with the ID place_phone_container
+        LinearLayout placePhoneContainer = listItemView.findViewById( R.id.place_phone_container );
         
-        // Set an click listener on the TextView (place phone text view), which sends an intent
-        // to a phone dialer to open and write the phone number of selected place to dial pad
-        placePhone.setOnClickListener( new View.OnClickListener()
+        // Set an click listener on the LinearLayout (place phone text view + icon image view), which
+        // sends an intent to a phone dialer to open and copy phone number of selected place to dial pad
+        placePhoneContainer.setOnClickListener( new View.OnClickListener()
         {
             @Override
             public void onClick( View view )

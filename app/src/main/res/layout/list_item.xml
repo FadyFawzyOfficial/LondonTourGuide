@@ -25,6 +25,7 @@
 		tools:background = "@color/category_stay">
 		
 		<LinearLayout
+			android:id="@+id/place_location_container"
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
@@ -41,6 +42,7 @@
 		</LinearLayout>
 		
 		<LinearLayout
+			android:id="@+id/place_website_container"
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
@@ -57,6 +59,7 @@
 		</LinearLayout>
 		
 		<LinearLayout
+			android:id="@+id/place_phone_container"
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
