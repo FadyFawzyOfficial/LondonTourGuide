@@ -12,6 +12,6 @@
 	<!-- Strings for place number #1 in stay category -->
 	<string name = "stay_name_one">Ace Shoreditch</string>
 	<string name = "stay_location_one">100 Shoreditch High St, London E1 6JQ, UK</string>
-	<string name = "stay_website_one">Website</string>
+	<string name = "stay_website_one">https://www.acehotel.com/london</string>
 	<string name = "stay_phone_one">+44 20 7613 9800</string>
 </resources>
