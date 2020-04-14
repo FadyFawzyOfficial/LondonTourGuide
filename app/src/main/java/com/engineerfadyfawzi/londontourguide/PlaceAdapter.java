@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
@@ -87,10 +88,10 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // Get the place location from the currentPlace object and
         // set this text on the place location TextView
         placeLocation.setText( currentPlace.getPlaceLocationId() );
-    
+        
         // Find the LinearLayout in the list_item.xml layout with the ID place_location_container
         LinearLayout placeLocationContainer = listItemView.findViewById( R.id.place_location_container );
-    
+        
         // Set an click listener on the LinearLayout (place location text view + icon image view), which
         // sends an intent to a maps app to open the location is owned by the selected place.
         placeLocationContainer.setOnClickListener( new View.OnClickListener()
@@ -100,10 +101,10 @@ public class PlaceAdapter extends ArrayAdapter< Place >
             {
                 // Convert the String location into a URI object (to pass into the Intent constructor)
                 Uri locationUri = Uri.parse( "geo:0,0?q=" + getContext().getString( currentPlace.getPlaceLocationId() ) );
-            
+                
                 // Create a new intent to view the place location on Maps app
                 Intent locationIntent = new Intent( Intent.ACTION_VIEW, locationUri );
-            
+                
                 // Send the intent to launch a new activity which will show the location on a map
                 getContext().startActivity( locationIntent );
             }
@@ -141,7 +142,7 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // Get the place phone from the currentPlace object and
         // set this text on the place_phone TextView
         placePhone.setText( currentPlace.getPlacePhoneId() );
-    
+        
         // Find the LinearLayout in the list_item.xml layout with the ID place_phone_container
         LinearLayout placePhoneContainer = listItemView.findViewById( R.id.place_phone_container );
         
@@ -180,6 +181,21 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // These supply parameters to the parent of this view specifying how it should be arranged.
         // Set the layout parameters associated with this view (listItemView)
         listItemView.setLayoutParams( layoutParams );
+        
+        listItemView.setOnClickListener( new View.OnClickListener()
+        {
+            @Override
+            public void onClick( View view )
+            {
+                Intent fullScreenIntent = new Intent( getContext(), FullScreenActivity.class );
+                
+                fullScreenIntent.putExtra( "PlaceImageId", currentPlace.getPlaceImageId() );
+                
+                fullScreenIntent.putExtra( "PlaceNameId", currentPlace.getPlaceNameId() );
+                
+                getContext().startActivity( fullScreenIntent );
+            }
+        } );
         
         // Return the whole list item layout (containing 4 TextView)
         // so that it can be shown in the listView

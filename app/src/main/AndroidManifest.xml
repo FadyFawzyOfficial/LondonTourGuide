@@ -9,16 +9,13 @@
 		android:roundIcon = "@mipmap/ic_launcher_round"
 		android:supportsRtl = "true"
 		android:theme = "@style/AppTheme">
-		
 		<activity android:name = ".MainActivity">
 			<intent-filter>
 				<action android:name = "android.intent.action.MAIN" />
 				
 				<category android:name = "android.intent.category.LAUNCHER" />
 			</intent-filter>
-		</activity>
-		
-		<!-- A child of the main activity -->
+		</activity> <!-- A child of the main activity -->
 		<activity
 			android:name = ".StayActivity"
 			android:label = "@string/category_stay"
@@ -28,9 +25,7 @@
 			<meta-data
 				android:name = "android.support.PARENT_ACTIVITY"
 				android:value = ".MainActivity" />
-		</activity>
-		
-		<!-- A child of the main activity -->
+		</activity> <!-- A child of the main activity -->
 		<activity
 			android:name = ".EatActivity"
 			android:label = "@string/category_eat"
@@ -40,9 +35,7 @@
 			<meta-data
 				android:name = "android.support.PARENT_ACTIVITY"
 				android:value = ".MainActivity" />
-		</activity>
-		
-		<!-- A child of the main activity -->
+		</activity> <!-- A child of the main activity -->
 		<activity
 			android:name = ".DrinkActivity"
 			android:label = "@string/category_drink"
@@ -52,9 +45,7 @@
 			<meta-data
 				android:name = "android.support.PARENT_ACTIVITY"
 				android:value = ".MainActivity" />
-		</activity>
-		
-		<!-- A child of the main activity -->
+		</activity> <!-- A child of the main activity -->
 		<activity
 			android:name = ".TodoActivity"
 			android:label = "@string/category_todo"
@@ -64,9 +55,7 @@
 			<meta-data
 				android:name = "android.support.PARENT_ACTIVITY"
 				android:value = ".MainActivity" />
-		</activity>
-		
-		<!-- A child of the main activity -->
+		</activity> <!-- A child of the main activity -->
 		<activity
 			android:name = ".ShopActivity"
 			android:label = "@string/category_shop"
@@ -77,7 +66,9 @@
 				android:name = "android.support.PARENT_ACTIVITY"
 				android:value = ".MainActivity" />
 		</activity>
-	
+		<activity
+			android:name = ".FullScreenActivity">
+		</activity>
 	</application>
 
 </manifest>
