@@ -86,6 +86,24 @@ public class PlaceAdapter extends ArrayAdapter< Place >
         // Get the place location from the currentPlace object and
         // set this text on the place location TextView
         placeLocation.setText( currentPlace.getPlaceLocationId() );
+    
+        // Set an click listener on the TextView (place location text view), which sends an intent
+        // to a maps app to open a the location on map which is owned by the selected place.
+        placeLocation.setOnClickListener( new View.OnClickListener()
+        {
+            @Override
+            public void onClick( View view )
+            {
+                // Convert the String location into a URI object (to pass into the Intent constructor)
+                Uri locationUri = Uri.parse( "geo:0,0?q=" + getContext().getString( currentPlace.getPlaceLocationId() ) );
+            
+                // Create a new intent to view the place location on Maps app
+                Intent locationIntent = new Intent( Intent.ACTION_VIEW, locationUri );
+            
+                // Send the intent to launch a new activity which will show the location on a map
+                getContext().startActivity( locationIntent );
+            }
+        } );
         
         // Find the TextView in the list_item.xml layout with the ID place_website
         TextView placeWebsite = listItemView.findViewById( R.id.place_website );
