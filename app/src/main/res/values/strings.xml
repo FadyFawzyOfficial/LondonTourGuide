@@ -8,10 +8,305 @@
 	<string name = "category_drink">Where to drink?</string>
 	<string name = "category_todo">What to do?</string>
 	<string name = "category_shop">Where to shop?</string>
-
+	
 	<!-- Strings for place number #1 in stay category -->
 	<string name = "stay_name_one">Ace Shoreditch</string>
 	<string name = "stay_location_one">100 Shoreditch High St, London E1 6JQ, UK</string>
 	<string name = "stay_website_one">https://www.acehotel.com/london</string>
 	<string name = "stay_phone_one">+44 20 7613 9800</string>
+	
+	<!-- Strings for place number #2 in stay category -->
+	<string name = "stay_name_two">Chiltern Firehouse</string>
+	<string name = "stay_location_two">1 Chiltern St, Marylebone, London W1U 7PA, UK</string>
+	<string name = "stay_website_two">http://www.chilternfirehouse.com</string>
+	<string name = "stay_phone_two">+44 20 7073 7676</string>
+	
+	<!-- Strings for place number #3 in stay category -->
+	<string name = "stay_name_three">Corinthia London</string>
+	<string name = "stay_location_three">Whitehall Pl, Westminster, London SW1A 2BD, UK</string>
+	<string name = "stay_website_three">https://www.corinthia.com/london</string>
+	<string name = "stay_phone_three">+44 20 7930 8181</string>
+	
+	<!-- Strings for place number #4 in stay category -->
+	<string name = "stay_name_four">Dorset Square Hotel</string>
+	<string name = "stay_location_four">39-40 Dorset Square, Marylebone, London NW1 6QN, UK</string>
+	<string name = "stay_website_four">https://www.firmdalehotels.com/hotels/london</string>
+	<string name = "stay_phone_four">+44 20 7723 7874</string>
+	
+	<!-- Strings for place number #5 in stay category -->
+	<string name = "stay_name_five">Ham Yard Hotel</string>
+	<string name = "stay_location_five">1 Ham Yard, Soho, London W1D 7DT, UK</string>
+	<string name = "stay_website_five">https://www.firmdalehotels.com/hotels/london</string>
+	<string name = "stay_phone_five">+44 20 3642 2000</string>
+	
+	<!-- Strings for place number #6 in stay category -->
+	<string name = "stay_name_six">Claridge’s</string>
+	<string name = "stay_location_six">Brook St, Mayfair London W1K 4HR, UK</string>
+	<string name = "stay_website_six">https://www.claridges.co.uk</string>
+	<string name = "stay_phone_six">+44 20 7495 1769</string>
+	
+	<!-- Strings for place number #7 in stay category -->
+	<string name = "stay_name_seven">South Place Hotel</string>
+	<string name = "stay_location_seven">3 South Place London EC2M 2AF, UK</string>
+	<string name = "stay_website_seven">https://southplacehotel.com</string>
+	<string name = "stay_phone_seven">+44 20 3503 0000</string>
+	
+	<!-- Strings for place number #8 in stay category -->
+	<string name = "stay_name_eight">The London EDITION</string>
+	<string name = "stay_location_eight">10 Berners St London W1T 3NP, UK</string>
+	<string name = "stay_website_eight">https://www.editionhotels.com/london</string>
+	<string name = "stay_phone_eight">+44 20 7781 0000</string>
+	
+	<!-- Strings for place number #9 in stay category -->
+	<string name = "stay_name_nine">The Ned</string>
+	<string name = "stay_location_nine">27 Poultry, London EC2R 8AJ, UK</string>
+	<string name = "stay_website_nine">https://www.thened.com</string>
+	<string name = "stay_phone_nine">+44 20 3828 2000</string>
+	
+	<!-- Strings for place number #10 in stay category -->
+	<string name = "stay_name_ten">The Savoy</string>
+	<string name = "stay_location_ten">Strand, London WC2R 0EZ, UK</string>
+	<string name = "stay_website_ten">https://www.fairmont.com/savoy-london</string>
+	<string name = "stay_phone_ten">+44 20 7836 4343</string>
+	
+	<!-- Strings for place number #1 in eat category -->
+	<string name = "eat_name_one">Hawksmoor</string>
+	<string name = "eat_location_one">157A Commercial St, London E1 6BJ, UK</string>
+	<string name = "eat_website_one">https://thehawksmoor.com</string>
+	<string name = "eat_phone_one">+44 20 7426 4850</string>
+	
+	<!-- Strings for place number #2 in eat category -->
+	<string name = "eat_name_two">St. JOHN</string>
+	<string name = "eat_location_two">26 St John St, Clerkenwell, London EC1M 4AY, UK</string>
+	<string name = "eat_website_two">https://stjohnrestaurant.com</string>
+	<string name = "eat_phone_two">+44 20 7251 0848</string>
+	
+	<!-- Strings for place number #3 in eat category -->
+	<string name = "eat_name_three">Dishoom</string>
+	<string name = "eat_location_three">12 Upper St Martin\'s Ln, London WC2H 9FB, UK</string>
+	<string name = "eat_website_three">https://www.dishoom.com</string>
+	<string name = "eat_phone_three">+44 20 7420 9320</string>
+	
+	<!-- Strings for place number #4 in eat category -->
+	<string name = "eat_name_four">The Wolseley</string>
+	<string name = "eat_location_four">160 Piccadilly, St. James\'s, London W1J 9EB, UK</string>
+	<string name = "eat_website_four">https://www.thewolseley.com</string>
+	<string name = "eat_phone_four">+44 20 7499 6996</string>
+	
+	<!-- Strings for place number #5 in eat category -->
+	<string name = "eat_name_five">Tina, We Salute You</string>
+	<string name = "eat_location_five">47 King Henry\'s Walk</string>
+	<string name = "eat_website_five">https://www.tinawesaluteyou.com</string>
+	<string name = "eat_phone_five">+44 20 3119 0047</string>
+	
+	<!-- Strings for place number #6 in eat category -->
+	<string name = "eat_name_six">Wahaca</string>
+	<string name = "eat_location_six">The Azulito Bar Lower Ground Floor, 80 Wardour St, Soho, London W1F 0TG, UK</string>
+	<string name = "eat_website_six">https://www.wahaca.co.uk</string>
+	<string name = "eat_phone_six">+44 20 7734 0195</string>
+	
+	<!-- Strings for place number #7 in eat category -->
+	<string name = "eat_name_seven">Homeslice Pizza</string>
+	<string name = "eat_location_seven">13 Neal\'s Yard, London WC2H 9DP, UK</string>
+	<string name = "eat_website_seven">http://www.homeslicepizza.co.uk</string>
+	<string name = "eat_phone_seven">+44 20 3151 7488</string>
+	
+	<!-- Strings for place number #8 in eat category -->
+	<string name = "eat_name_eight">Brixton Market</string>
+	<string name = "eat_location_eight">16B Electric Ave, Brixton, London SW9 8JX, UK</string>
+	<string name = "eat_website_eight">http://brixtonmarket.net</string>
+	<string name = "eat_phone_eight">+44 20 7274 2990</string>
+	
+	<!-- Strings for place number #9 in eat category -->
+	<string name = "eat_name_nine">Wagamama</string>
+	<string name = "eat_location_nine">riverside level royal festival hall, South Bank, London SE1 8XX, UK</string>
+	<string name = "eat_website_nine">https://www.wagamama.com</string>
+	<string name = "eat_phone_nine">+44 20 7021 0877</string>
+	
+	<!-- Strings for place number #10 in eat category -->
+	<string name = "eat_name_ten">Honey &amp; Co.</string>
+	<string name = "eat_location_ten">25 Warren St, Fitzrovia, London W1T 5LZ, UK</string>
+	<string name = "eat_website_ten">https://honeyandco.co.uk</string>
+	<string name = "eat_phone_ten">+44 20 7388 6175</string>
+	
+	<!-- Strings for place number #1 in drink category -->
+	<string name = "drink_name_one">Cellarium Cafe</string>
+	<string name = "drink_location_one">Westminster Abbey, Deans Yard, The Sanctuary, Westminster, London SW1P 3PA, UK</string>
+	<string name = "drink_website_one">https://www.benugo.com/restaurants/cellarium-cafe-terrace</string>
+	<string name = "drink_phone_one">+44 20 7222 0516</string>
+	
+	<!-- Strings for place number #2 in drink category -->
+	<string name = "drink_name_two">The Ritz London</string>
+	<string name = "drink_location_two">150 Piccadilly</string>
+	<string name = "drink_website_two">https://www.lhw.com/hotel/The-Ritz-London-London-England</string>
+	<string name = "drink_phone_two">+44 20 3026 1188</string>
+	
+	<!-- Strings for place number #3 in drink category -->
+	<string name = "drink_name_three">The Afternoon Tea Bus</string>
+	<string name = "drink_location_three">6-7 Chandos Pl, Covent Garden, London WC2N 4HU, UK</string>
+	<string name = "drink_website_three">http://www.bbbakery.co.uk/afternoon-tea/afternoon-tea-bus-tour</string>
+	<string name = "drink_phone_three">+44 20 7420 9320</string>
+	
+	<!-- Strings for place number #4 in drink category -->
+	<string name = "drink_name_four">Nude Espresso</string>
+	<string name = "drink_location_four">26 Hanbury St, Shadwell, London E1 6QR, UK</string>
+	<string name = "drink_website_four">https://www.nudeespresso.com</string>
+	<string name = "drink_phone_four">+44 7712 899335</string>
+	
+	<!-- Strings for place number #5 in drink category -->
+	<string name = "drink_name_five">Milk</string>
+	<string name = "drink_location_five">18-20 Bedford Hill, Balham, London SW12 9RG, UK</string>
+	<string name = "drink_website_five">http://www.milk.london</string>
+	<string name = "drink_phone_five">++44 20 8772 9085</string>
+	
+	<!-- Strings for place number #6 in drink category -->
+	<string name = "drink_name_six">Café Kick</string>
+	<string name = "drink_location_six">43 Exmouth Market, Farringdon, London EC1R 4QL, UK</string>
+	<string name = "drink_website_six">https://www.cafekick.co.uk</string>
+	<string name = "drink_phone_six">+44 20 7837 8077</string>
+	
+	<!-- Strings for place number #7 in drink category -->
+	<string name = "drink_name_seven">London Cocktail Club - Old Street</string>
+	<string name = "drink_location_seven">63 Worship St, Shoreditch, London EC2A 2DU, UK</string>
+	<string name = "drink_website_seven">https://londoncocktailclub.co.uk/old-street</string>
+	<string name = "drink_phone_seven">+44 20 7247 0015</string>
+	
+	<!-- Strings for place number #8 in drink category -->
+	<string name = "drink_name_eight">Sketch</string>
+	<string name = "drink_location_eight">9 Conduit St, Mayfair, London W1S 2XG, UK</string>
+	<string name = "drink_website_eight">https://sketch.london</string>
+	<string name = "drink_phone_eight">+44 20 7659 4500</string>
+	
+	<!-- Strings for place number #9 in drink category -->
+	<string name = "drink_name_nine">Dukes Bar</string>
+	<string name = "drink_location_nine">35 Saint James\'s Place</string>
+	<string name = "drink_website_nine">https://www.dukeshotel.com/dukes-bar</string>
+	<string name = "drink_phone_nine">+44 20 7491 4840</string>
+	
+	<!-- Strings for place number #10 in drink category -->
+	<string name = "drink_name_ten">The Harp</string>
+	<string name = "drink_location_ten">47 Chandos Pl, Charing Cross, London WC2N 4HS, UK</string>
+	<string name = "drink_website_ten">https://www.harpcoventgarden.com</string>
+	<string name = "drink_phone_ten">+44 20 7836 0291</string>
+	
+	<!-- Strings for place number #1 in shop category -->
+	<string name = "shop_name_one">Borough Market</string>
+	<string name = "shop_location_one">8 Southwark St, London SE1 1TL, UK</string>
+	<string name = "shop_website_one">https://boroughmarket.org.uk</string>
+	<string name = "shop_phone_one">+44 20 7407 1002</string>
+	
+	<!-- Strings for place number #2 in shop category -->
+	<string name = "shop_name_two">Liberty</string>
+	<string name = "shop_location_two">Regent St, Carnaby, London W1B 5AH, UK</string>
+	<string name = "shop_website_two">https://www.libertylondon.com</string>
+	<string name = "shop_phone_two">+44 20 7734 1234</string>
+	
+	<!-- Strings for place number #3 in shop category -->
+	<string name = "shop_name_three">Portobello Road</string>
+	<string name = "shop_location_three">Portobello Rd, London, UK</string>
+	<string name = "shop_website_three">http://www.portobelloroad.co.uk</string>
+	<string name = "shop_phone_three">+44 20 7361 3001</string>
+	
+	<!-- Strings for place number #4 in shop category -->
+	<string name = "shop_name_four">Daunt Books</string>
+	<string name = "shop_location_four">84 Marylebone High St, Marylebone, London W1U 4QW, UK</string>
+	<string name = "shop_website_four">https://dauntbooks.co.uk</string>
+	<string name = "shop_phone_four">+44 20 7224 2295</string>
+	
+	<!-- Strings for place number #5 in shop category -->
+	<string name = "shop_name_five">Hatchards</string>
+	<string name = "shop_location_five">187 Piccadilly</string>
+	<string name = "shop_website_five">https://www.hatchards.co.uk</string>
+	<string name = "shop_phone_five">+44 20 7439 9921</string>
+	
+	<!-- Strings for place number #6 in shop category -->
+	<string name = "shop_name_six">Persephone Books</string>
+	<string name = "shop_location_six">59 Lamb\'s Conduit St, London WC1N 3NB, UK</string>
+	<string name = "shop_website_six">www.persephonebooks.co.uk</string>
+	<string name = "shop_phone_six">+44 20 7242 9292</string>
+	
+	<!-- Strings for place number #7 in shop category -->
+	<string name = "shop_name_seven">Hostem</string>
+	<string name = "shop_location_seven">41 Redchurch Street</string>
+	<string name = "shop_website_seven">https://www.bluemountain.school/hostem</string>
+	<string name = "shop_phone_seven">+44 20 7739 9733</string>
+	
+	<!-- Strings for place number #8 in shop category -->
+	<string name = "shop_name_eight">Harrods</string>
+	<string name = "shop_location_eight">87-135 Brompton Rd, Knightsbridge, London SW1X 7XL, UK</string>
+	<string name = "shop_website_eight">https://www.harrods.com</string>
+	<string name = "shop_phone_eight">+44 20 7730 1234</string>
+	
+	<!-- Strings for place number #9 in shop category -->
+	<string name = "shop_name_nine">Hamleys</string>
+	<string name = "shop_location_nine">188-196 Regent Street</string>
+	<string name = "shop_website_nine">https://www.hamleys.com</string>
+	<string name = "shop_phone_nine">+44 371 704 1977</string>
+	
+	<!-- Strings for place number #10 in shop category -->
+	<string name = "shop_name_ten">Cyberdog</string>
+	<string name = "shop_location_ten">842 Chalk Farm Rd, Camden Town, London NW1 8AH, UK</string>
+	<string name = "shop_website_ten">https://www.cyberdog.net</string>
+	<string name = "shop_phone_ten">+44 20 7482 2842</string>
+	
+	<!-- Strings for place number #1 in to do category -->
+	<string name = "todo_name_one">Churchill War Rooms</string>
+	<string name = "todo_location_one">Clive Steps, King Charles St, Westminster, London SW1A 2AQ, UK</string>
+	<string name = "todo_website_one">https://www.iwm.org.uk/visits/churchill-war-rooms</string>
+	<string name = "todo_phone_one">+44 20 7416 5000</string>
+	
+	<!-- Strings for place number #2 in to do category -->
+	<string name = "todo_name_two">Charles Dickens Museum</string>
+	<string name = "todo_location_two">48 Doughty Street</string>
+	<string name = "todo_website_two">https://dickensmuseum.com</string>
+	<string name = "todo_phone_two">+44 20 7405 2127</string>
+	
+	<!-- Strings for place number #3 in to do category -->
+	<string name = "todo_name_three">Shakespeare\'s Globe</string>
+	<string name = "todo_location_three">21 New Globe Walk, London SE1 9DT, UK</string>
+	<string name = "todo_website_three">https://www.shakespearesglobe.com</string>
+	<string name = "todo_phone_three">+44 20 7902 1400</string>
+	
+	<!-- Strings for place number #4 in to do category -->
+	<string name = "todo_name_four">Royal Museums Greenwich</string>
+	<string name = "todo_location_four">Romney Rd, Greenwich, London SE10 9NF, UK</string>
+	<string name = "todo_website_four">https://www.rmg.co.uk</string>
+	<string name = "todo_phone_four">+44 20 8858 4422</string>
+	
+	<!-- Strings for place number #5 in to do category -->
+	<string name = "todo_name_five">British Museum</string>
+	<string name = "todo_location_five">Great Russell St, Bloomsbury, London WC1B 3DG, UK</string>
+	<string name = "todo_website_five">https://www.britishmuseum.org</string>
+	<string name = "todo_phone_five">+44 20 7323 8299</string>
+	
+	<!-- Strings for place number #6 in to do category -->
+	<string name = "todo_name_six">National Portrait Gallery</string>
+	<string name = "todo_location_six">St. Martin\'s Pl, London WC2H 0HE, UK</string>
+	<string name = "todo_website_six">https://www.npg.org.uk</string>
+	<string name = "todo_phone_six">+44 20 7306 0055</string>
+	
+	<!-- Strings for place number #7 in to do category -->
+	<string name = "todo_name_seven">Tate Modern</string>
+	<string name = "todo_location_seven">Bankside, London SE1 9TG, UK</string>
+	<string name = "todo_website_seven">https://www.tate.org.uk/visit/tate-modern</string>
+	<string name = "todo_phone_seven">+44 20 7887 8888</string>
+	
+	<!-- Strings for place number #8 in to do category -->
+	<string name = "todo_name_eight">Wellcome Collection</string>
+	<string name = "todo_location_eight">183 Euston Rd, London NW1 2BE, UK</string>
+	<string name = "todo_website_eight">https://wellcomecollection.org</string>
+	<string name = "todo_phone_eight">+44 20 7611 2222</string>
+	
+	<!-- Strings for place number #9 in to do category -->
+	<string name = "todo_name_nine">South Bank</string>
+	<string name = "todo_location_nine">103 Borough Rd, London SE1 0AA, UK</string>
+	<string name = "todo_website_nine">https://southbanklondon.com</string>
+	<string name = "todo_phone_nine">+44 20 7815 7815</string>
+	
+	<!-- Strings for place number #10 in to do category -->
+	<string name = "todo_name_ten">Regent\'s Park</string>
+	<string name = "todo_location_ten">Chester Rd, London NW1 4NR, UK</string>
+	<string name = "todo_website_ten">https://landscapenotes.com</string>
+	<string name = "todo_phone_ten">+44 300 061 2300</string>
+	
 </resources>
