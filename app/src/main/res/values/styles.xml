@@ -49,5 +49,13 @@
 		<item name = "android:layout_margin">@dimen/container_padding_margin</item>
 		<item name = "android:tint">@android:color/white</item>
 	</style>
+	
+	<!-- Style for the LinearLayout of each place location, website and phone. -->
+	<style name = "PlaceInfoContainerStyle">
+		<item name = "android:layout_width">match_parent</item>
+		<item name = "android:layout_height">0dp</item>
+		<item name = "android:layout_weight">1</item>
+		<item name = "android:paddingLeft">8dp</item>
+	</style>
 
 </resources>

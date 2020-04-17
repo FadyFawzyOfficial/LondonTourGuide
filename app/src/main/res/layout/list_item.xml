@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The height of this LinearLayout will determine at run time -->
 <LinearLayout
 	xmlns:android = "http://schemas.android.com/apk/res/android"
 	xmlns:tools = "http://schemas.android.com/tools"
@@ -6,6 +7,7 @@
 	android:layout_height = "210dp"
 	android:background = "@color/tan_background">
 	
+	<!-- Place's Name and an Image as a Background -->
 	<TextView
 		android:id = "@+id/place_name"
 		style = "@style/PlaceTextStyle"
@@ -15,6 +17,7 @@
 		tools:background = "@mipmap/stay_image_one"
 		tools:text = "@string/stay_name_one" />
 	
+	<!-- Layout Contains Place locatin, website and phone -->
 	<LinearLayout
 		android:id = "@+id/text_container"
 		android:layout_width = "0dp"
@@ -23,12 +26,10 @@
 		android:orientation = "vertical"
 		tools:background = "@color/category_stay">
 		
+		<!-- Place's location (address) -->
 		<LinearLayout
 			android:id = "@+id/place_location_container"
-			android:layout_width = "match_parent"
-			android:layout_height = "0dp"
-			android:layout_weight = "1"
-			android:paddingLeft = "8dp">
+			style = "@style/PlaceInfoContainerStyle">
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
@@ -41,12 +42,10 @@
 		
 		</LinearLayout>
 		
+		<!-- Place's website (link) -->
 		<LinearLayout
 			android:id = "@+id/place_website_container"
-			android:layout_width = "match_parent"
-			android:layout_height = "0dp"
-			android:layout_weight = "1"
-			android:paddingLeft = "8dp">
+			style = "@style/PlaceInfoContainerStyle">
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
@@ -59,12 +58,10 @@
 		
 		</LinearLayout>
 		
+		<!-- Place's phone number -->
 		<LinearLayout
 			android:id = "@+id/place_phone_container"
-			android:layout_width = "match_parent"
-			android:layout_height = "0dp"
-			android:layout_weight = "1"
-			android:paddingLeft = "8dp">
+			style = "@style/PlaceInfoContainerStyle">
 			
 			<ImageView
 				style = "@style/ContainerIconStyle"
