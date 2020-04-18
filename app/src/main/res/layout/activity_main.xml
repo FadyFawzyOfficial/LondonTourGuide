@@ -9,69 +9,9 @@
 	android:orientation = "vertical"
 	tools:context = ".MainActivity">
 	
-	<!-- Stay category -->
-	<FrameLayout
+	<androidx.viewpager.widget.ViewPager
+		android:id = "@+id/view_pager"
 		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content"
-		android:background = "@color/category_stay">
-		
-		<TextView
-			android:id = "@+id/stay"
-			style = "@style/CategoryStyle"
-			android:text = "@string/category_stay" />
-	
-	</FrameLayout>
-	
-	<!-- Eat category -->
-	<FrameLayout
-		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content"
-		android:background = "@color/category_eat">
-		
-		<TextView
-			android:id = "@+id/eat"
-			style = "@style/CategoryStyle"
-			android:text = "@string/category_eat" />
-	
-	</FrameLayout>
-	
-	<!-- Drink category -->
-	<FrameLayout
-		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content"
-		android:background = "@color/category_drink">
-		
-		<TextView
-			android:id = "@+id/drink"
-			style = "@style/CategoryStyle"
-			android:text = "@string/category_drink" />
-	
-	</FrameLayout>
-	
-	<!-- Do category -->
-	<FrameLayout
-		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content"
-		android:background = "@color/category_todo">
-		
-		<TextView
-			android:id = "@+id/todo"
-			style = "@style/CategoryStyle"
-			android:text = "@string/category_todo" />
-	
-	</FrameLayout>
-	
-	<!-- Shop category -->
-	<FrameLayout
-		android:layout_width = "match_parent"
-		android:layout_height = "wrap_content"
-		android:background = "@color/category_shop">
-		
-		<TextView
-			android:id = "@+id/shop"
-			style = "@style/CategoryStyle"
-			android:text = "@string/category_shop" />
-	
-	</FrameLayout>
+		android:layout_height = "match_parent" />
 
 </LinearLayout>
