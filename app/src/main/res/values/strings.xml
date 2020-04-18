@@ -3,11 +3,11 @@
 	<string name = "app_name">London Tour Guide</string>
 	
 	<!-- Title for each category of main layout -->
-	<string name = "category_stay">Where to stay?</string>
-	<string name = "category_eat">Where to eat?</string>
-	<string name = "category_drink">Where to drink?</string>
-	<string name = "category_todo">What to do?</string>
-	<string name = "category_shop">Where to shop?</string>
+	<string name = "category_stay">Stay</string>
+	<string name = "category_eat">Eat</string>
+	<string name = "category_drink">Drink</string>
+	<string name = "category_todo">Todo</string>
+	<string name = "category_shop">Shop</string>
 	
 	<!-- Strings for place number #1 in stay category -->
 	<string name = "stay_name_one">Ace Shoreditch</string>
@@ -308,5 +308,5 @@
 	<string name = "todo_location_ten">Chester Rd, London NW1 4NR, UK</string>
 	<string name = "todo_website_ten">https://landscapenotes.com</string>
 	<string name = "todo_phone_ten">+44 300 061 2300</string>
-	
+
 </resources>

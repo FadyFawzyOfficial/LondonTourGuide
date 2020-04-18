@@ -1,5 +1,7 @@
 package com.engineerfadyfawzi.londontourguide;
 
+import android.content.Context;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -11,14 +13,21 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class CategoryAdapter extends FragmentPagerAdapter
 {
     /**
+     * Context of the app
+     */
+    private Context context;
+    
+    /**
      * Create a new {@link CategoryAdapter} object.
      *
      * @param fragmentManager is the fragment manager that will keep each fragment's state in the
      *                        adapter across swipes.
+     * @param context         is the context of the app
      */
-    public CategoryAdapter( FragmentManager fragmentManager )
+    public CategoryAdapter( Context context, FragmentManager fragmentManager )
     {
         super( fragmentManager );
+        this.context = context;
     }
     
     /**
@@ -59,5 +68,34 @@ public class CategoryAdapter extends FragmentPagerAdapter
     public int getCount()
     {
         return 5;
+    }
+    
+    /**
+     * Return the pageTitle that should be displayed for the each page at the top.
+     *
+     * @param position is the page number (position of Fragment)
+     *
+     * @return
+     */
+    @Override
+    public CharSequence getPageTitle( int position )
+    {
+        switch ( position )
+        {
+            case 0:
+                return context.getString( R.string.category_stay );
+            
+            case 1:
+                return context.getString( R.string.category_eat );
+            
+            case 2:
+                return context.getString( R.string.category_drink );
+            
+            case 3:
+                return context.getString( R.string.category_todo );
+            
+            default:
+                return context.getString( R.string.category_shop );
+        }
     }
 }
